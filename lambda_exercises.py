@@ -110,5 +110,5 @@ original_scores = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sci
 # [('Social sciences', 82), ('English', 88), ('Science', 90), ('Maths', 97)]
 '''
 original_scores = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
-sorted_list = list(filter(lambda word: (word in original_scores), original_scores))
-print(sorted_list)
+original_scores.sort(key = lambda score: score[1])
+print(original_scores)
